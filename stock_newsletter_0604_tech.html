@@ -1,0 +1,570 @@
+
+    <html>
+    <head>
+        <title>本日 AI 精選投資新聞</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f4f4f9;
+                color: #333;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                max-width: 800px;
+                margin: auto;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                overflow: hidden;
+            }
+            .header {
+                text-align: center;
+                background-color: #4CAF50;
+                color: white;
+                padding: 20px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                font-size: 14px;
+            }
+            .header img {
+                max-width: 100%;
+                height: auto;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            .greeting {
+                padding: 20px;
+                background-color: #f9f9f9;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+            .news-item {
+                margin-bottom: 30px;
+                padding: 20px;
+                border-bottom: 1px solid #ddd;
+            }
+            .title {
+                font-size: 20px;
+                font-weight: bold;
+                margin: 10px 0;
+                color: darkorange;
+                text-decoration: underline;
+            }
+            .title a {
+                text-decoration: none;
+                color: darkorange;
+            }
+            .publish-time, .sentiment, .reason {
+                font-size: 14px;
+                color: #555;
+            }
+            .cover {
+                width: 100%;
+                max-width: 400px;
+                margin-top: 10px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: auto;
+                border-radius: 10px;
+            }
+            footer {
+                text-align: center;
+                padding: 20px;
+                background-color: #4CAF50;
+                color: white;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                font-size: 14px;
+                margin-top: 20px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 25px auto;
+                font-size: 14px;
+                text-align: left;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            thead th {
+                background-color: #4CAF50; /* A modern, flat color */
+                color: white; /* White text on the header */
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                border: none; /* Remove the default border */
+                padding: 12px 15px;
+            }
+
+            thead tr:first-child th {
+                text-align: center; /* Center the text in the first row */
+                font-size: 16px !important; /* Larger font size for the first row */
+                letter-spacing: normal; /* Normal letter spacing for the first row */
+                text-transform: none; /* Normal text transform for the first row */
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+            tbody tr:nth-child(odd) {
+                background-color: #ffffff;
+            }
+
+            tbody tr:hover {
+                background-color: #f1f1f1;
+                transition: background-color 0.2s ease; /* Smooth hover effect */
+            }
+
+            tbody td {
+                padding: 12px 15px;
+                border-bottom: 1px solid #ddd; /* Subtle border for rows */
+            }
+
+            table caption {
+                margin: 15px;
+                font-size: 1.2em;
+                color: #555;
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>本日 AI 精選投資新聞</h1>
+            </div>
+    
+            <div class="greeting">
+                您好！<span style="color: grey;">0xC37...</span> 小姐<br>
+                我是您的 AI 投資新聞小助手，每天幫您挑選您可能最感興趣的新聞，
+                希望能夠幫助您的投資決策！
+            </div>
+    
+        <table>
+        <caption>您的重要持股</caption>
+        <thead>
+            <tr>
+                <th>股票代號</th>
+                <th>股票名稱</th>
+                <th>庫存市值佔比</th>
+            </tr>
+        </thead>
+        <tbody>
+    
+            <tr>
+                <td>2317</td>
+                <td>鴻海</td>
+                <td>6.0%</td>
+            </tr>
+        
+            <tr>
+                <td>1537</td>
+                <td>廣隆</td>
+                <td>63.5%</td>
+            </tr>
+        
+            <tr>
+                <td>2002</td>
+                <td>中鋼</td>
+                <td>30.5%</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5584553" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5584553/xl/4405db1308dc2bc2ac55afb4ee5f88d0.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5584553" target="_blank">黃董報名牌該選誰？隱藏版利多將接棒？！塞港缺櫃延燒！6月就看航運股？</a></div>
+                <div class="publish-time">2024-06-03 16:18:11</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 
+
+
+周一台股盤中上漲 400 多點，由台積電 (2330-TW)、鴻海(2317-TW)、聯發科(2454-TW) 等大型權值股，領軍大盤上漲</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5584384" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5584384/xl/bae807571b28fb43ad4b9d146e78498c.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5584384" target="_blank">〈COMPUTEX〉鴻海旗下鴻佰亮相輝達GB200機櫃及先進液冷解決方案</a></div>
+                <div class="publish-time">2024-06-03 15:28:09</div>
+                <div class="sentiment">情緒指標: 中性</div>
+                <div class="reason">原因: 鴻海 (2317-TW) 集團旗下鴻佰科技今 (3) 日宣佈，將在 2024 年臺北國際電腦展 (Computex) 上以「引領 AI 新運算」為主題，展示次世代 AI 數據中心全方位解決方案，包括亮相最新的 NVIDIA GB200 NVL72 伺服器機櫃及先進液冷解決方案</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5584344" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5584344/xxl/0060fff759868984711a5233c5655c46.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5584344" target="_blank">〈台股盤後〉嗨開香檳迎AI盛會 大漲362點站上所有均線</a></div>
+                <div class="publish-time">2024-06-03 14:10:00</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 鴻海 (2317-TW) 收盤上漲 4.5 元 2.62%，收盤報 176.5 元，大立光 (3008-TW) 收盤上漲 20 元或 0.88%，收盤價報 2295 元</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5583903" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5583903/xl/6f2bc94dd9aa275942be89bcbf8f4774.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5583903" target="_blank">〈ETF成分股調整〉「國民高股息」00878換股三進三出 00922異動7檔</a></div>
+                <div class="publish-time">2024-06-03 09:59:17</div>
+                <div class="sentiment">情緒指標: 中性</div>
+                <div class="reason">原因: 
+
+
+此外，MSCI 另一旗艦台股市值型指數─「MSCI 台灣領袖 50 精選指數」也同時生效最新成分股，共計新增中鋼 (2002-TW)、英業達 (2356-TW)、技嘉 (2376-TW)、奇鋐 (3017-TW)、世芯 - KY(3661-TW)、大聯大 (3702-TW)、遠傳 (4904-TW) 等 7 檔；刪除華新 (1605-TW)、微星 (2377-TW)、華南金 (2880-TW)、永豐金 (2890-TW)、創意 (3443-TW)、旭隼 (6409-TW)、矽力 - KY(6415-TW)，主因市值排序變化而新增或刪除</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5583911" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5583911/xl/9e08778e0f476ae9b76f2a707a95c042.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5583911" target="_blank">〈台股開盤〉AI救市 輝達43家台廠供應鏈上榜 開高走高大漲逾300點</a></div>
+                <div class="publish-time">2024-06-03 09:41:35</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 
+
+
+權值股台積電今日早盤以 839 元開出 ，最高攻 844 元，漲幅逾 2.3%，權值股鴻海 (2317-TW) 股價也上漲開出，開盤報價 177 元 ，聯發科 (2454-TW) 早盤報價上漲，以 1256 元開出</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5583585" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5583585/xxl/e0e65c7aa75432ba7020429c42491424.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5583585" target="_blank">〈黃仁勳開講〉AI機器人時代來臨 秀鴻海、廣運智慧製造實力</a></div>
+                <div class="publish-time">2024-06-02 23:32:35</div>
+                <div class="sentiment">情緒指標: 中性</div>
+                <div class="reason">原因: 輝達 (NVDA-US) 執行長黃仁勳今 (2) 日表示，實體 AI 即將來臨，未來所有工廠都將導入機器人，並舉出兩大例子，一是鴻海 (2317-TW) 在墨西哥的智慧工廠，另一則是廣運 (6125-TW) 協助巨大 (9921-TW) 的智慧倉儲系統</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5583570" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5583570/xxl/98235d19a4446b042e6ee18a86fcc511.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5583570" target="_blank">〈黃仁勳開講〉輝達攜手台廠9大咖 打造Blackwell AI資料中心</a></div>
+                <div class="publish-time">2024-06-02 21:47:37</div>
+                <div class="sentiment">情緒指標: 中性</div>
+                <div class="reason">原因: 
+
+
+黃仁勳指出，華擎 (3515-TW) 旗下永擎電子、華碩 (2357-TW)、技嘉(2376-TW)、鴻海(2317-TW) 旗下鴻佰科技、英業達 (2356-TW)、和碩(4938-TW)、廣達(2382-TW) 旗下雲達、美超微 (SMCI-US)、緯創(3231-TW) 及緯穎 (6669-TW) 將利用輝達 GPU 和網路技術，推出雲端、地端、嵌入式和邊緣 AI 系統</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5583548" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5583548/xxl/a4e06954d3a93be04e6baf23dd16a843.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5583548" target="_blank">〈黃仁勳開講〉上千人冒雨排隊前來 鴻海劉揚偉、美超微梁見後現身</a></div>
+                <div class="publish-time">2024-06-02 18:52:34</div>
+                <div class="sentiment">情緒指標: 中性</div>
+                <div class="reason">原因: 
+
+
+輝達六點開放進場後，眾多供應鏈與大咖夥伴都到現場，包括鴻海 (2317-TW) 董事長劉揚偉、美超微 (SMCI-US) 執行長梁見後、華碩 (2357-TW) 董事長施崇棠等已坐在台下</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5582378" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5582378/xl/c971b5b5f602624f547996aeecdd9d3c.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5582378" target="_blank">輝達與鴻海新合作案即將在COMPUTEX亮相 外資GB200受惠股: 台積電、信驊、鴻海、華碩、技嘉、致茂</a></div>
+                <div class="publish-time">2024-06-02 09:10:04</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 
+
+
+AI 趨勢的受惠龍頭股，老師都是在下跌至有超額利潤時公開分析，大家可以見證 2023/10/05 日公開買 台積電 (2330-TW) 在 525 元、鴻海 (2317-TW)104 元淨值以下公開適合存股，鴻海於今年 3/30 日公開預告第二季 5 月重點是 AI PC，點名看好龍頭股華碩(2357-TW)，本月也從 420 元附近漲至本週 540 元，技嘉(2376-TW) 受惠營收占提升，老師於 290 元附近帶領客戶加碼，本週最高也來到 342 元，隨著執行長黃仁勳來台、COMPUTEX 倒數計時，AI 概念股是否有機會再掀一波漲勢? 還是要趁著高潮時刻先走一趟呢?
+
+
+不要忘記股市行情都是反應在前面，見報追利多題材通常已經沒有利潤容易套牢，智霖老師還是強調一定要先學習股票基本正確觀念，以上的股票都有在公開節目提供操作證據，也是藉此跟投資人分享，龍頭股做法是用佈局的方式容易賺錢，實務方面必須要長短股票作搭配，上週四節目公開賣出了多檔股票並非看壞行情，而是針對短期部位的資金調節，這樣會員才會真正有錢可以低接再進場，當前個股輪動快速的行情具備困難度，你會更需要老師的獨家盤中數據來指引你，關於最新的行情看法則可以立即點選下方影音收看老師在週六最新的直播節目</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5583217" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5583217/xxl/477554eb2a025752a09cc0b6f5ec5b8a.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5583217" target="_blank">黃仁勳來台、超級股東會周、陳瑞聰接任仁寶董事長 本周大事回顧</a></div>
+                <div class="publish-time">2024-06-01 11:10:02</div>
+                <div class="sentiment">情緒指標: 中性</div>
+                <div class="reason">原因: 輝達 (NVDA-US) 執行長黃仁勳來台，刮起一陣 AI 炫風，紛紛與台廠供應鏈夥伴會面，引起市場關注；本周多家大廠召開股東會，包括長榮、鴻海、緯創等；仁寶原任董事長許勝雄卸任，正式交棒給陳瑞聰，以下為本周大事回顧： 
+
+
+黃仁勳來台刮起 AI 炫風 與台廠供應鏈夥伴見面 
+
+
+輝達 (
+NVDA-US
+) 創辦人暨執行長黃仁勳周周四 (30 日) 晚間宴請供應鏈夥伴，鴻海 (
+2317-TW
+) 董事長劉揚偉也受邀出席，外界關注兩人互動，劉揚偉周五 (31 日) 表示，黃仁勳說 AI 產業規模將超過 100 兆美元，雙方也預計在下周會面</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5583034" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5583034/xxl/23b44c3ebee6da3ce5d6f0299e6af5fc.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5583034" target="_blank">00939首次換股「18進18出」 電信三雄全數上榜</a></div>
+                <div class="publish-time">2024-05-31 19:47:31</div>
+                <div class="sentiment">情緒指標: 中性</div>
+                <div class="reason">原因: 
+
+
+刪除的 18 檔成分股為：川湖 (2059-TW)、鴻海 (2317-TW)、佳世達 (2352-TW)、英業達 (2356-TW)、瑞昱 (2379-TW)、台光電 (2383-TW)、聯發科 (2454-TW)、文曄 (3036-TW)、欣興 (3037-TW)、景碩 (3189-TW)、緯創 (3231-TW)、瑞鼎 (3592-TW)、天鈺 (4961-TW)、中光電 (5371-TW)、頎邦 (6147-TW)、緯穎 (6669-TW)、矽創 (8016-TW)、南電 (8046-TW)</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5582669" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5582669/xxl/b78535d3e7ac746e104871823836f064.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5582669" target="_blank">【量大強漲股整理】資產股攻勢再起，有【戲】可期嗎?六月份新主流大公開?</a></div>
+                <div class="publish-time">2024-05-31 17:13:41</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 因大量台灣人移居，造成熊本當地台日雙語人才短缺，熊本商工會議所決定直接來台獵人頭，今天帶領當地 7 所企業到台南長榮大學舉辦企業說明與徵才活動；(2317-TW) 鴻海，下跌 2.55%，收在 172 元，AI 伺服器營收貢獻將在 2024 年達到 10%，到 2025 年增加到 24%，到 2026 年達到 28%，成長動能可期；(2454-TW) 聯發科，下跌 4.26%，收在 1235 元，持續擴大 5G 產品線，昨（30）日發表「天璣 7300」系列晶片，包含天璣 7300 及天璣 7300X，都採用高能效的台積電 4 奈米製程，其中，天璣 7300X 支持雙螢幕顯示，搶攻折疊手機市場</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5582411" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5582411/xl/2d7d093694b39fe186258cca9b8b6c29.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5582411" target="_blank">劉揚偉轉述黃仁勳估AI產業規模將破百兆美元 晚宴中還交流投球技巧</a></div>
+                <div class="publish-time">2024-05-31 16:58:29</div>
+                <div class="sentiment">情緒指標: 中性</div>
+                <div class="reason">原因: 輝達 (NVIDIA)(NVDA-US) 創辦人暨執行長黃仁勳昨日晚間宴請供應鏈夥伴，鴻海 (2317-TW) 董事長劉揚偉也受邀出席，外界關注兩人互動，劉揚偉今 (31) 日表示，黃仁勳說 AI 產業規模將超過 100 兆美元，雙方也預計在下周會面</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5582631" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5582631/xxl/d25465f9b80f44c1e0714de2fb0e9aa5.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5582631" target="_blank">芯鼎震盪走高 鴻海股東會後是看這2檔(line@公布)</a></div>
+                <div class="publish-time">2024-05-31 16:50:12</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 
+
+
+驚天動地 33 每天都在節目提醒投資朋友，光寶科 (2301-TW)、宏碁(2353-TW)、豐藝(6189-TW)、中光電(5371-TW)、富世達(6805-TW)、輔信(2405-TW)、瑞軒(2489-TW)、系微(6231-TW)、萬海(2615-TW)、陽明(2609-TW)、緯穎(6669-TW) 都要先避開，想知道接下來該如何操作，連續每日收看 
+https://youtu.be/TaW-E1BV92o
+
+
+今天鴻海 (2317-TW) 召開股東會，董事長劉揚偉表示，在與輝達執行長黃仁勳會面時，對方特別提到整個 AI 產業未來會超過一百兆美元，並預期 AI 伺服器很快會成為鴻海下一個兆元營收的產品(去年整體營收約 6 兆)，此外在電動車佈局方面，另一款乘用車 MODEL B 將完成量產前的準備，預計今年底到明年初開始接受預訂，先前我們從鴻海營收分析找到網通股，現在又抓到兩檔與鴻海有關的汽車族群個股，直接公開在 Line@主頁：
+https://line.me/R/ti/p/%40laz1344x
+
+
+美股怎麼了？台股該怎麼辦？恐慌指數 VIX +1.82，美股再度全面下跌，道瓊日 KD 死亡交叉且回測至 20 軸的位置，那斯達克與費半指數殺尾盤、日 KD 也同步死亡交叉，美股無法成為帶動台股反彈的引擎，美國首季 GDP 季增年率降至 1.3%，初領失業救濟金人數為 3 週以來首度增加，經濟成長放緩，可以促使 FED 降息機率增加，但是 FedWatch 卻出現升息的選項，所以今晚公布的 4 月 PCE 指數變得非常重要，DELL、HP 屬於同族群，但財報發布後股價有天壤之別的表現，HP 看好 AI PC 的未來，股價大漲，DELL 看好 AI 需求，但考量到投入成本膨脹、定價競爭激烈等因素，預估全年毛利率將會下滑，盤後股價大跌超過 10%，接下來將如何影響整個 AI 產業的發展，由美股到台股詳細分析搜尋「徐照興鉅亨網」新聞，大行情，勿小做！
+
+
+【IP 矽智財】NVIDIA 下一個重大商機？執行長黃仁勳指出：「AI 生成影音」
+
+神盾集團的芯鼎 (6695-TW)4 天 4 根漲停板後，今日震盪走高，尾盤神盾(6462-TW) 也有 MSCI 新納入拉抬股價，安國 (8054-TW) 在大盤下殺之際也有漲，芯鼎宣布首次取得 ASIC 設計委託案，與日本領先的 AI 方案商達成設計委託合作，芯鼎的 ISP Solution SoC 平台內含 ThetaEye AI 技術，為機器人、無人機、安全監控、工業檢測及行車相關應用帶來更多創新和價值，還有一檔個股具備 AI 題材並與 ISP 有關，5/28 公開在 Line@，5/29 還有低接的機會，5/30 盤中攻上漲停板，還沒跟上的投資朋友直接到 Line@
+
+
+大行情，勿小做！
+
+操作不用變來變去，也不用忽多忽空，隨意轉換標的，文章不會每天貼出，但若您也喜歡【由外而內】，【由上而下】有系統的文章分析，歡迎大家轉貼本文，並加入《徐照興新台股龍捲風》
+
+
+所有文章分類可來 FB 社團：
+https://www.facebook.com/groups/istock168
+
+整體操作及個股問題可加 LINE：
+https://line.me/R/ti/p/%40laz1344x
+
+
+文章來源：永誠投顧徐照興分析師
+
+
+
+
+ 
+
+
+本公司所推薦分析之個別有價證券
+
+無不當之財務利益關係 以往之績效不保證未來獲利
+
+投資人應獨立判斷 審慎評估並自負投資風險
+
+</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5582261" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5582261/xl/eda29f6b13c75baf9ec7cbf08216704c.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5582261" target="_blank">〈鴻海股東會〉科技日10/8登場首度連辦2天 機器人+AI平台、新車款成亮點</a></div>
+                <div class="publish-time">2024-05-31 15:32:37</div>
+                <div class="sentiment">情緒指標: 中性</div>
+                <div class="reason">原因: 鴻海 (2317-TW) 今 (31) 日召開股東會，董事長劉揚偉第五屆鴻海科技日 (HHTD24) 將在 10 月 8、9 日舉行，且將首度連辦 2 天，第二天將對外開放給一般民眾參加，本次除了電動車新車款外，也將展出「機器人 + AI 服務」平台</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5582156" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5582156/xl/17b8c7b35ac466b623d2036b330c1145.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5582156" target="_blank">〈鴻海股東會〉劉揚偉：夏普董事會及經營團隊6月下旬改組 鴻海將扮更積極角色</a></div>
+                <div class="publish-time">2024-05-31 14:32:52</div>
+                <div class="sentiment">情緒指標: 中性</div>
+                <div class="reason">原因: 鴻海 (2317-TW) 今 (31) 日召開股東會，股東關心轉投資的夏普 (SHARP) 狀況，董事長劉揚偉表示，6 月下旬夏普股東會，會有新的經營團隊、董事組成，鴻海將扮演更積極的角色</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5582057" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5582057/xl/b7351b58904802afd7c4a44e50ed38ee.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5582057" target="_blank">〈鴻海股東會〉劉揚偉：GB200供不應求明年AI伺服器業績破兆元 合併營收衝7兆</a></div>
+                <div class="publish-time">2024-05-31 12:36:00</div>
+                <div class="sentiment">情緒指標: 中性</div>
+                <div class="reason">原因: 鴻海 (2317-TW) 今 (31) 日召開股東會，股東關心 AI 伺服器布局，董事長劉揚偉表示，今年 AI 伺服器營收成長將超過 4 成，輝達 (NVDA-US) 新推出 GB200 供不應求，明年 AI 伺服器業績就可破兆元，合併營收可望突破 7 兆元</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5581901" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5581901/xxl/ac342fdb46ca59c2adb53afdab54b12e.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5581901" target="_blank">〈鴻海股東會〉股東高喊股價上看500元 劉揚偉：朝越來越高的目標努力</a></div>
+                <div class="publish-time">2024-05-31 10:41:21</div>
+                <div class="sentiment">情緒指標: 中性</div>
+                <div class="reason">原因: 鴻海 (2317-TW) 今 (31) 日召開股東會，臨時動議環節，股東上台發言時表示，希望在董事長劉揚偉退休前股價能到 500 元，對此，劉揚偉表示，股價是經營團隊成果展示，會朝越來越高的目標來努力</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5581752" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5581752/xxl/134f288d8b8a772ffbe80acb21522caf.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5581752" target="_blank">〈台股開盤〉連2天急跌後反彈近200點 受制10日線反壓 權值股漲跌互現</a></div>
+                <div class="publish-time">2024-05-31 09:39:55</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因:  
+
+
+觀察今天權值股表現，台積電 (2330-TW) 早盤開平盤後，隨後翻紅，漲幅約 0.26%，鴻海 (2317-TW) 也有表現，小漲 0.85%，台達電 (2308-TW) 漲 0.45%，日月光 (3711-TW) 漲 1.26%</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5580960" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5580960/xl/5e8f9bfb3cf17a58e649ff972d4b01aa.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5580960" target="_blank">外資今年第4大賣超 甩賣台股435億元 砍出台積電及鴻海都逾1.4萬張</a></div>
+                <div class="publish-time">2024-05-30 18:47:04</div>
+                <div class="sentiment">情緒指標: 負向</div>
+                <div class="reason">原因: 同時，今天外資出重手調節 435.07 億元，賣超台積電 (2330-TW) 及鴻海 (2317-TW) 都超過 1.4 萬張，外資賣盤並擴及部分金控股</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5580513" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5580513/xl/5e5d821e2806c2e327b5f40d875d9d70.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5580513" target="_blank">機器人大軍火熱演出，隱藏機器人就是「他」</a></div>
+                <div class="publish-time">2024-05-30 18:00:05</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 
+
+
+鴻海 (2317-TW)，廣達(2382-TW)，華碩(2357-TW)，宏碁(2353-TW)，聯發科(2454-TW)，光寶科(2301-TW)，一詮(2486-TW)，廣運(6125-TW)，力致(3483-TW) 等，神盾集團的芯鼎 (6695-TW) 切入 AI 應用，連拉四根漲停，其中機器人商機最大，商機在哪裡，獲利就在哪裡，可以看到機器人全面起漲，所羅門 (2359-TW)，廣明(6188-TW)，佳能(2374-TW)，昆盈(2365-TW)，羅昇(8374-TW) 等，只要沾到邊，都直接噴出，不過這邊要留意乖離率，很多個股過熱，不要過度追價</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5580784" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5580784/xxl/f532c190670f344c5e489fb6798506be.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5580784" target="_blank">【量大強漲股整理】台股震盪回檔下，AI股有機會整理後在上嗎?蘋果WWDC大會登場下誰有機會受惠?</a></div>
+                <div class="publish-time">2024-05-30 17:04:39</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 
+
+
+權值股方面，(2330-TW) 台積電，下跌 2.22%，收在 838 元，瑞銀首席環球股市分析師 Andrew Garthwaite 28 日表示，企業的技術領先大陸同業 5 年、美國同業 2 年，幾乎控制所有先進晶片的生產，全球第一大晶圓代工系統的優勢很難被超越；(2317-TW) 鴻海，下跌 2.22%，收在 176.5 元，根據美系外資最新報告，再度看好企業在 AI 伺服器具有強勁的發展實力，維持「買進」評等，並將目標價從原先的 201 元，調升至 227 元；(2454-TW) 聯發科，今日收平盤 1290 元，企業號召全球同仁參與節能減碳行動，總計超過 7,000 人參與，讓員工透過日常行動實踐綠色生活，提升全員環保意識，帶動更多人加入守護地球的行列</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5580779" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5580779/xxl/d918f09fd76a95643bbebdc090e3a0c6.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5580779" target="_blank">美債殖利率升破4.5%！輝達AI紅利可期？機器人變漸凍人？</a></div>
+                <div class="publish-time">2024-05-30 16:48:13</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 玻璃陶、橡膠族群買盤點火，航運族群陽明 (2609-TW)、萬海 (2615-TW) 亦有資金流入，但在電子權值股台積電 (2330-TW)、聯發科 (2454-TW)、鴻海 (2317-TW) 等沈重賣壓下，加權指數終場大跌 298.02 點，收 21364.48 點，成交量為 4176 億</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5579752" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5579752/xl/c64fa6668b83fac07e5bcebd9a1c6271.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5579752" target="_blank">〈台股開盤〉開低後挫近250點 權值、高價股腳軟 芯鼎飆第4根漲停</a></div>
+                <div class="publish-time">2024-05-30 09:39:28</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 
+
+
+權值股走勢偏弱，台積電 (2330-TW)(TSM-US) 跌幅超過 1%，回測月線支撐，鴻海 (2317-TW) 與聯發科 (2454-TW) 跌幅也都超過 1%，大型電子權值如台達電 (2308-TW)、日月光投控 (3711-TW) 與聯電 (2303-TW) 等，跌幅都在 1-3% 不等，壓抑整體大盤走勢</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5579535" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5579535/xxl/a9b3edeed4e8045e6f551eb53612f213.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5579535" target="_blank">【鑫攻略早報】再生醫療雙法助生技重回多頭!持續看多比特幣概念股!!</a></div>
+                <div class="publish-time">2024-05-30 07:44:52</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 
+
+
+輝達 (NVDA-US) 因為拆股 (1 拆 10) 被市場視為利多，週二股價在美股大漲近 7%，再創歷史新高，但反應在台股昨天台積電 (2330-TW) 聯發科 (2454-TW) 鴻海 (2317-TW) 都是下跌的，在亞股日股跌 0.7% 韓股更是大跌 1.5%，美股中與輝達連動高的美超微 (SMCI-US) 散熱的維諦技術 (VRT-US)，表現都平平，美超微股價的技術面甚至早己成空頭的走勢了</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5578986" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5578986/xxl/c34701920393a2c84a7b79a06302a9f5.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5578986" target="_blank">資金水平垂直擴散 ! 泰碩最小漲幅達標，換「它」接棒 ! </a></div>
+                <div class="publish-time">2024-05-29 19:21:39</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 而現在排除經濟通膨數據外，相信市場上的大家都非常關注 COMPUTEX 展的來臨，可以說是黃仁勳的一舉一動都有可能隨時對股市造成波動，而台灣身為 AI 最大軍火庫，這一次也是備受重視，除了輝達執行長黃仁勳來台外，其他像是超微、英特爾、高通、安謀等等的執行長都將陸續來台 ! 
+
+
+回顧去年從 ChatGPT 問世後，就如一把火點燃整個市場，彷彿全世界都被宣告進入第四次工業革命的 AI 時代，整個供應鏈從半導體的先進製程、先進封裝，再到雲端運算必須的 AI 伺服器，最後再到終端消費性電子都如同一個巨大的機器在快速運作，而台灣在這次也被拉到國際舞台上大放光彩，並掌握許多關鍵技術以及零件系統組裝等等，這也讓台股從去年年初的 14000 點一路飆漲到 21937 點，進出口部分更是在 AI 的帶領下逐漸好轉，景氣燈號部分也從藍燈來到了黃紅燈，投資機會更是多到數不勝數，過去我也從廣達 (2382-TW)、華碩 (2357-TW)、技嘉 (2376-TW) 一路操作到最近的鴻海 (2317-TW)、正崴 (2392-TW)、泰碩 (3338-TW) 等等，精準把握了每一次新題材的機會</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5579031" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5579031/xxl/e83667817429c089f76a8bf9ccbb07e7.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5579031" target="_blank">【量大強漲股整理】黃仁勳來台 AI股再度聚焦，機器人、散熱、AIPC， 誰最有潛力？?</a></div>
+                <div class="publish-time">2024-05-29 17:13:17</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 
+
+
+權值股方面，(2330-TW)台積電，下跌 0.92%，收在 857 元，總裁魏哲家缺席 23 日登場的 2024 年技術論壇台灣場，於 26 日造訪 (ASML-US) 艾司摩爾荷蘭總部，法人預測，企業應該是想買高數值孔徑極紫外光機台（High-NA EUV），此種設備對 2 奈米以下製程極為關鍵；(2317-TW)鴻海，下跌 2.7%，收在 180.5 元，美系外資預期，企業第二季營收將可年增 8%，主要來自伺服器、網通和 PC 產品帶動，看好企業 AI 伺服器具備全方位解決方案、全球製造優勢，將目標價從 201 元調升至 227 元；(2454-TW)聯發科，下跌 1.53%，收在 1290 元，外資摩根士丹利看好企業的成長，給予「優於大盤」的投資評等，目標價來到每股 1,588 元，有機會整理在上</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5578897" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5578897/xxl/b57c11b87ccbf6bf67f026396aa18a9e.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5578897" target="_blank">台尾盤賣壓出籠營建、光電、散熱成資金避風港?</a></div>
+                <div class="publish-time">2024-05-29 16:09:21</div>
+                <div class="sentiment">情緒指標: 中性</div>
+                <div class="reason">原因: 
+
+
+2. 台股 (29) 日開低衝高，營建、光電與玻璃陶瓷族群買盤點火，指數一度衝上 21906.1 點，但在電子權值股台積電 (2330-TW)、聯發科(2454-TW)、鴻海(2317-TW) 賣壓沉重下，加權指數終場大跌 195.91 點，收 21662.5 點成交量為 4695 億</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5578800" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5578800/xl/3251d123ebdc18a7c4643d839fc7d26a.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5578800" target="_blank">電腦展彩蛋藏不住，絕佳買點大公開！信賴產業遺珠發光！「這族群」6月繼續飆！</a></div>
+                <div class="publish-time">2024-05-29 15:21:37</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 
+
+
+周三台股開高走低，台積電 (2330-TW)、鴻海(2317-TW)、聯發科(2454-TW) 與金融股齊跌，台股終場下跌近 200 點，為連續三天創高後指數首次拉回、櫃買市場則是續創新高</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5578584" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5578584/xxl/e94ed64f280fe46ccda0bd2b3ac5dbd9.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5578584" target="_blank">〈台股盤後〉5月狂奔後 權值股回檔修正 跌195點收21662點</a></div>
+                <div class="publish-time">2024-05-29 14:08:16</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因:  
+
+
+台股五月以來上漲 1266 點，期間屢創新高，權值股今天回檔修正，台積電 (2330-TW) 跌 0.92%，聯發科 (2454-TW) 跌 1.53%，鴻海 (2317-TW) 也跌 2.7%，台達電 (2308-TW) 跌 1.44%，日月光 (3711-TW) 跌 0.61%，僅大立光 (3008-TW) 漲 3.64%</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5578285" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5578285/xl/553b1bcf9caa5592ac5ed369ba098f37.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5578285" target="_blank">鴻海、聯發科獲利了結 鎖定IC設計低基期將飆漲翻倍的新AI主升股！</a></div>
+                <div class="publish-time">2024-05-29 10:26:53</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 
+
+
+所以，AI 股雖漲很多，但展望未來 2~3 年，AI 的未來真的跟 AI 指標股—輝達 (NVDA-US)、台積電(2330-TW) 一樣，還會再漲！不過這波當台積電、鴻海 (2317-TW)、聯發科(2454-TW) 等大型 AI 股漲了一波，奠定台股上漲的基石後，接下來漲勢將擴散到 OTC 中小型 + 低基期的 AI 股，這也是江江 6 月佈局的重心</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5577819" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5577819/xl/46442fdd5584d5118acdfb83cc79777e.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5577819" target="_blank">台股創新高 外資反手調節 賣超前10中半數都是ETF</a></div>
+                <div class="publish-time">2024-05-28 20:05:18</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 台股今 (28) 日終場上漲 54 點，收在 21858 點，站穩五日線，續創收盤新高點，三大法人僅自營商站買方，外資則轉賣方，大舉調節高股息 ETF，以及漲多個股，如中信金 (2891-TW)、宏碁 (2353-TW)、鴻海 (2317-TW)、光寶科 (2301-TW) 等，張數至少達 8000 張</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5577614" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5577614/xxl/2c5cbb3f9597ed9bde835eb8258950b3.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5577614" target="_blank">【量大強漲股整理】台股再創新高，IC設計聯發科大漲下，IP族群有機會反攻?</a></div>
+                <div class="publish-time">2024-05-28 17:21:54</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 
+
+
+
+權值股方面，(2330-TW) 台積電，下跌 0.46%，收在 865 元，企業在法說會提到，伺服器 AI 處理器今年貢獻的營收將成長超過一倍，占公司 2024 年總營收的 11%-13%，預估到 2028 年將超過 20%；(2317-TW) 鴻海，上漲 0.27%，收在 185.5 元，再創波段新高，與日本軟銀合作製造 Pepper 人形機器人，並且持續布局機器人軟硬體整合方案，旗下法博智能（FARobot）推出自主移動機器人（AMR）軟硬體方案，據悉，法博智能的機器人已打進台灣最大化纖業者的工廠產線，並導入面板廠；海外市場也切入美系半導體廠位於馬來西亞的後段封裝測試產線；(2454-TW) 聯發科，上漲 1.95%，收在 1310 元，昨日召開股東會，董事長蔡明介表示，5G/6G、AI 和車用是重要發展方向，未來 10 年機會很大，5G 朝 6G 前進，從技術到產品，未來 3 年、5 年、10 年計畫都在積極進行中，到處充滿機會</div>
+            </div>
+            
+            <footer>
+                版權所有 &copy; 202406 金融科技課程 B-1 組
+            </footer>
+        </div>
+    </body>
+    </html>
+    

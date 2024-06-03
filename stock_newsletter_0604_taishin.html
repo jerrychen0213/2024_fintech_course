@@ -1,0 +1,214 @@
+
+    <html>
+    <head>
+        <title>本日 AI 精選投資新聞</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f4f4f9;
+                color: #333;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                max-width: 800px;
+                margin: auto;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                overflow: hidden;
+            }
+            .header {
+                text-align: center;
+                background-color: #4CAF50;
+                color: white;
+                padding: 20px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                font-size: 14px;
+            }
+            .header img {
+                max-width: 100%;
+                height: auto;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            .greeting {
+                padding: 20px;
+                background-color: #f9f9f9;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+            .news-item {
+                margin-bottom: 30px;
+                padding: 20px;
+                border-bottom: 1px solid #ddd;
+            }
+            .title {
+                font-size: 20px;
+                font-weight: bold;
+                margin: 10px 0;
+                color: darkorange;
+                text-decoration: underline;
+            }
+            .title a {
+                text-decoration: none;
+                color: darkorange;
+            }
+            .publish-time, .sentiment, .reason {
+                font-size: 14px;
+                color: #555;
+            }
+            .cover {
+                width: 100%;
+                max-width: 400px;
+                margin-top: 10px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: auto;
+                border-radius: 10px;
+            }
+            footer {
+                text-align: center;
+                padding: 20px;
+                background-color: #4CAF50;
+                color: white;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                font-size: 14px;
+                margin-top: 20px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 25px auto;
+                font-size: 14px;
+                text-align: left;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            thead th {
+                background-color: #4CAF50; /* A modern, flat color */
+                color: white; /* White text on the header */
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                border: none; /* Remove the default border */
+                padding: 12px 15px;
+            }
+
+            thead tr:first-child th {
+                text-align: center; /* Center the text in the first row */
+                font-size: 16px !important; /* Larger font size for the first row */
+                letter-spacing: normal; /* Normal letter spacing for the first row */
+                text-transform: none; /* Normal text transform for the first row */
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+            tbody tr:nth-child(odd) {
+                background-color: #ffffff;
+            }
+
+            tbody tr:hover {
+                background-color: #f1f1f1;
+                transition: background-color 0.2s ease; /* Smooth hover effect */
+            }
+
+            tbody td {
+                padding: 12px 15px;
+                border-bottom: 1px solid #ddd; /* Subtle border for rows */
+            }
+
+            table caption {
+                margin: 15px;
+                font-size: 1.2em;
+                color: #555;
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>本日 AI 精選投資新聞</h1>
+            </div>
+    
+            <div class="greeting">
+                您好！<span style="color: grey;">0x2A9...</span> 先生<br>
+                我是您的 AI 投資新聞小助手，每天幫您挑選您可能最感興趣的新聞，
+                希望能夠幫助您的投資決策！
+            </div>
+    
+        <table>
+        <caption>您的重要持股</caption>
+        <thead>
+            <tr>
+                <th>股票代號</th>
+                <th>股票名稱</th>
+                <th>庫存市值佔比</th>
+            </tr>
+        </thead>
+        <tbody>
+    
+            <tr>
+                <td>00878</td>
+                <td>國泰高股息</td>
+                <td>23.1%</td>
+            </tr>
+        
+            <tr>
+                <td>00905</td>
+                <td>FT臺灣Smar</td>
+                <td>25.6%</td>
+            </tr>
+        
+            <tr>
+                <td>2887</td>
+                <td>台新金</td>
+                <td>50.5%</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5583903" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5583903/xl/6f2bc94dd9aa275942be89bcbf8f4774.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5583903" target="_blank">〈ETF成分股調整〉「國民高股息」00878換股三進三出 00922異動7檔</a></div>
+                <div class="publish-time">2024-06-03 09:59:17</div>
+                <div class="sentiment">情緒指標: 中性</div>
+                <div class="reason">原因: 台股 ETF 近來為換股旺季，依據 MSCI 指數公司資訊，「國民 ETF」─國泰永續高股息 (00878-TW) 所追蹤的「MSCI 臺灣 ESG 永續高股息精選 30 指數」，近期進行例行指數調整，成分股新增聯詠 (3034-TW)、中華電 (2412-TW)、正新 (2105-TW)3 檔；同步刪除南亞 (1303-TW)、聯強 (2347-TW)、華碩 (2357-TW)3 檔，並於今 (3) 日開盤前生效</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5579870" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5579870/xl/36fb466a8364e60685bc57f8192cbb8e.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5579870" target="_blank">不評論新光金個案 彭金隆：金金併打世界盃是「可想像的目標」</a></div>
+                <div class="publish-time">2024-05-30 10:49:11</div>
+                <div class="sentiment">情緒指標: 中性</div>
+                <div class="reason">原因: 新光金 (2888-TW) 重啟與台新金 (2887-TW) 的合併可行性評估，但市場傳出，中信金 (2891-TW) 亦表達興趣，儘管新光及中信已發布重訊表示不評論，今 (30) 日於立法院財委會上，多名立委持續關注金金併議題，金管會主委彭金隆回應，無法評論個案，但對於金融業壯大規模打世界盃，表示這是「可以想像的目標」</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5578704" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5578704/xl/95c395b78f6268294123c0d52f024245.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5578704" target="_blank">「新新併」殺出程咬金？中信金、新光金最新回應來了</a></div>
+                <div class="publish-time">2024-05-29 15:42:42</div>
+                <div class="sentiment">情緒指標: 中性</div>
+                <div class="reason">原因: 新光金 (2888-TW) 研議重啟與台新金 (2887-TW) 的合併可行性評估，但「新新併」似乎有變數，市場傳出，新光金創辦人吳東進找上國泰金、富邦金、中信金，提出合併的建議，僅中信表達興趣，對此，中信金 (2891-TW) 今 (29) 日發布重訊表示「有關外界傳聞，本公司不予評論」；新光金亦公告，「媒體報載相關內容，本公司毫無所悉，故無法評論」</div>
+            </div>
+            
+            <footer>
+                版權所有 &copy; 202406 金融科技課程 B-1 組
+            </footer>
+        </div>
+    </body>
+    </html>
+    
