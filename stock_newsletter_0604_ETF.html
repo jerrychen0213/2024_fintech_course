@@ -1,0 +1,223 @@
+
+    <html>
+    <head>
+        <title>本日 AI 精選投資新聞</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f4f4f9;
+                color: #333;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                max-width: 800px;
+                margin: auto;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                overflow: hidden;
+            }
+            .header {
+                text-align: center;
+                background-color: #4CAF50;
+                color: white;
+                padding: 20px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                font-size: 14px;
+            }
+            .header img {
+                max-width: 100%;
+                height: auto;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            .greeting {
+                padding: 20px;
+                background-color: #f9f9f9;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+            .news-item {
+                margin-bottom: 30px;
+                padding: 20px;
+                border-bottom: 1px solid #ddd;
+            }
+            .title {
+                font-size: 20px;
+                font-weight: bold;
+                margin: 10px 0;
+                color: darkorange;
+                text-decoration: underline;
+            }
+            .title a {
+                text-decoration: none;
+                color: darkorange;
+            }
+            .publish-time, .sentiment, .reason {
+                font-size: 14px;
+                color: #555;
+            }
+            .cover {
+                width: 100%;
+                max-width: 400px;
+                margin-top: 10px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: auto;
+                border-radius: 10px;
+            }
+            footer {
+                text-align: center;
+                padding: 20px;
+                background-color: #4CAF50;
+                color: white;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                font-size: 14px;
+                margin-top: 20px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 25px auto;
+                font-size: 14px;
+                text-align: left;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            thead th {
+                background-color: #4CAF50; /* A modern, flat color */
+                color: white; /* White text on the header */
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                border: none; /* Remove the default border */
+                padding: 12px 15px;
+            }
+
+            thead tr:first-child th {
+                text-align: center; /* Center the text in the first row */
+                font-size: 16px !important; /* Larger font size for the first row */
+                letter-spacing: normal; /* Normal letter spacing for the first row */
+                text-transform: none; /* Normal text transform for the first row */
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+            tbody tr:nth-child(odd) {
+                background-color: #ffffff;
+            }
+
+            tbody tr:hover {
+                background-color: #f1f1f1;
+                transition: background-color 0.2s ease; /* Smooth hover effect */
+            }
+
+            tbody td {
+                padding: 12px 15px;
+                border-bottom: 1px solid #ddd; /* Subtle border for rows */
+            }
+
+            table caption {
+                margin: 15px;
+                font-size: 1.2em;
+                color: #555;
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>本日 AI 精選投資新聞</h1>
+            </div>
+    
+            <div class="greeting">
+                您好！<span style="color: grey;">0x09A...</span> 先生<br>
+                我是您的 AI 投資新聞小助手，每天幫您挑選您可能最感興趣的新聞，
+                希望能夠幫助您的投資決策！
+            </div>
+    
+        <table>
+        <caption>您的重要持股</caption>
+        <thead>
+            <tr>
+                <th>股票代號</th>
+                <th>股票名稱</th>
+                <th>庫存市值佔比</th>
+            </tr>
+        </thead>
+        <tbody>
+    
+            <tr>
+                <td>2442</td>
+                <td>新美齊</td>
+                <td>8.2%</td>
+            </tr>
+        
+            <tr>
+                <td>00919</td>
+                <td>群益精選高</td>
+                <td>52.2%</td>
+            </tr>
+        
+            <tr>
+                <td>8936</td>
+                <td>國統</td>
+                <td>22.1%</td>
+            </tr>
+        
+            <tr>
+                <td>1609</td>
+                <td>大亞</td>
+                <td>15.0%</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5583343" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5583343/xl/09253a434b26f9ae81f2fac2c0003af6.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5583343" target="_blank">人氣高息ETF將除息 00918單次配息率逾3% 00915今年來報酬破2成</a></div>
+                <div class="publish-time">2024-06-02 08:50:02</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 6 月又有多檔高股息 ETF 將進行除息，其中，00919、00918、00915 皆為季配型的高人氣 ETF，比較 3 檔單次配息率，以大華優利高填息 30(00918-TW) 的 3.19% 最為亮麗，預估每單位配發 0.8 元，創新高，不過，若觀察今年以來含息報酬表現，00915 超過 2 成，上漲動能相當強勁</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5582760" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5582760/xl/f2d4d92530ca14b2f640f1ab757dd763.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5582760" target="_blank">00919最新換股名單揭曉  6月配息0.7元創高年化配息率破10%</a></div>
+                <div class="publish-time">2024-05-31 17:50:03</div>
+                <div class="sentiment">情緒指標: 中性</div>
+                <div class="reason">原因: 群益台灣精選高息 ETF(00919-TW) 即將在 6 月迎來第五次配息，根據群益投信官網最新配息公告顯示，00919 本次預估配發金額為 0.7 元，創新高，單次殖利率 2.72%，年化配息率 10.88%，00919 今 (31) 日亦公布最新換股名單，此次 13 進 13 出，新增  5 檔傳產股及 3 檔金融股納入，多檔電子股因漲多遭剃除</div>
+            </div>
+            
+            <div class="news-item">
+                <a href="https://news.cnyes.com/news/id/5577819" target="_blank"><img src="https://cimg.cnyes.cool/prod/news/5577819/xl/46442fdd5584d5118acdfb83cc79777e.jpg" class="cover"></a>
+                <div class="title"><a href="https://news.cnyes.com/news/id/5577819" target="_blank">台股創新高 外資反手調節 賣超前10中半數都是ETF</a></div>
+                <div class="publish-time">2024-05-28 20:05:18</div>
+                <div class="sentiment">情緒指標: 正向</div>
+                <div class="reason">原因: 
+
+
+外資賣超前十名中就有五檔 ETF，又以高股息 ETF 佔多數，包括統一台灣高息動能 (00939-TW)、群益台灣精選高息 (00919-TW)、復華台灣科技優息 (00929-TW)，三檔合計賣超張數高達 3.2 萬張，其他漲多個股也遭調節，如中信金張數就破萬張</div>
+            </div>
+            
+            <footer>
+                版權所有 &copy; 202406 金融科技課程 B-1 組
+            </footer>
+        </div>
+    </body>
+    </html>
+    
